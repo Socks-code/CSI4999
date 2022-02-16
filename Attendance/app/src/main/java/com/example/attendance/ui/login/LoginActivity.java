@@ -5,6 +5,8 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.attendance.R;
+import com.example.attendance.TestActivity;
 import com.example.attendance.ui.login.LoginViewModel;
 import com.example.attendance.ui.login.LoginViewModelFactory;
 import com.example.attendance.databinding.ActivityLoginBinding;
@@ -38,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        //getWindow().getDecorView().setBackgroundColor(Color.BLUE);
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
@@ -120,8 +124,15 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+                openTestActivity();
             }
         });
+    }
+    private void openTestActivity()
+    {
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
