@@ -8,7 +8,7 @@
     tools:context=".TestActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/HomeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -71,7 +71,7 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="toolbar,button,ClassesButton,MessagesButton,SettingsButton"
+        app:constraint_referenced_ids="toolbar,HomeButton,ClassesButton,MessagesButton,SettingsButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

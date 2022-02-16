@@ -13,7 +13,7 @@
         tools:context=".TestActivity">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/HomeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="104dp"
 
-            android:text="Button"
+            android:text="Classes"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="198dp"
-            android:text="Button"
+            android:text="Messages"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="292dp"
 
-            android:text="Button"
+            android:text="Settingss"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -75,7 +75,7 @@
             android:id="@+id/group2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="toolbar,button,ClassesButton,MessagesButton,SettingsButton"
+            app:constraint_referenced_ids="toolbar,HomeButton,ClassesButton,MessagesButton,SettingsButton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ScrollView
@@ -158,7 +158,7 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="toolbar,button,ClassesButton,MessagesButton,SettingsButton"
+        app:constraint_referenced_ids="toolbar,HomeButton,ClassesButton,MessagesButton,SettingsButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
