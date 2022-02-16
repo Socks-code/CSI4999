@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
+                    openTestActivity();
                 }
                 setResult(Activity.RESULT_OK);
 
@@ -124,7 +125,7 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
-                openTestActivity();
+                //openTestActivity();
             }
         });
     }
