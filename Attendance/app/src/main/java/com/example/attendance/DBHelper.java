@@ -29,7 +29,7 @@ public class DBHelper extends AppCompatActivity {
     public static SQLiteDatabase db;
     //DBHelper myDbHelper;
 
-
+/*
     Button searchBtn;
     EditText searchTxt;
     String txt = "";
@@ -61,10 +61,11 @@ public class DBHelper extends AppCompatActivity {
     String AllQuery = "";
 
     Intent foodDetails;
-    /*
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
         categorySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
@@ -124,7 +125,7 @@ public class DBHelper extends AppCompatActivity {
                 // from the food Details view
                 arrayIndex = i;
                 //we need to get the result of the  Rating update
-                MainActivity.this.startActivityForResult(foodDetails, 123);
+                DBHelper.this.startActivityForResult(foodDetails, 123);
 
             }
         });
@@ -175,7 +176,7 @@ public class DBHelper extends AppCompatActivity {
                 if (RImageList.get(i) == null)
                     RImageList.set(i, "no_image.png");
 
-            myCustomAdapter = new MyCustomAdapter(MainActivity.this,
+            myCustomAdapter = new MyCustomAdapter(DBHelper.this,
                     RNameList, RImageList, RIdList);
             myList.setAdapter(myCustomAdapter);
 
@@ -186,6 +187,7 @@ public class DBHelper extends AppCompatActivity {
     }//end of getResult
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         float r = 1f;
         // Check which request we're responding to
         if (requestCode == 123) {
@@ -230,5 +232,5 @@ public class DBHelper extends AppCompatActivity {
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
         }
-    } */
+    }*/
 }
