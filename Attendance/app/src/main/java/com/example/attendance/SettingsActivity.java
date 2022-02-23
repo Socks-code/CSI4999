@@ -7,15 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ClassViewActivity extends AppCompatActivity {
-    //private ActivityLoginBinding binding;
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_view);
-        //binding = ActivityLoginBinding.inflate(getLayoutInflater());
-        //setContentView(R.layout.my_layout_id);
+        setContentView(R.layout.activity_settings);
 
         final Button button = (Button) findViewById(R.id.HomeButton);
         button.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +38,7 @@ public class ClassViewActivity extends AppCompatActivity {
                 openSettingsActivity();
             }
         });
-
+//MessagesButton
     }
     private void openClassesActivity()
     {

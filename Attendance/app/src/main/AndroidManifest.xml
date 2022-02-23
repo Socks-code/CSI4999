@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Attendance">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Messages"
+            android:exported="false" />
+        <activity
             android:name=".ClassViewActivity"
             android:exported="false" />
         <activity

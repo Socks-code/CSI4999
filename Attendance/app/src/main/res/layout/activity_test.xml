@@ -81,7 +81,7 @@
 
         android:layout_marginStart="33dp"
         android:layout_marginTop="75dp"
-        android:text="Here we will see our homescreen. WOW. SO g00d."
+        android:text="Homescreen after login"
         android:textSize="44dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

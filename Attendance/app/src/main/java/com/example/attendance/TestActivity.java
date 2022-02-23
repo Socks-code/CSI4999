@@ -10,7 +10,8 @@ import android.widget.Button;
 public class TestActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
@@ -26,8 +27,21 @@ public class TestActivity extends AppCompatActivity {
                 openHomeActivity();
             }
         });
+        final Button MessageButton = (Button) findViewById(R.id.MessagesButton);
+        MessageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openMessagesActivity();
+            }
+        });
 
+        final Button SettingsButton = (Button) findViewById(R.id.SettingsButton);
+        SettingsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openSettingsActivity();
+            }
+        });
     }
+
     private void openTestActivity()
     {
         Intent intent = new Intent(this, ClassViewActivity.class);
@@ -40,4 +54,17 @@ public class TestActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    private void openMessagesActivity()
+    {
+        Intent intent = new Intent(this, Activity_Messages.class);
+        startActivity(intent);
+
+    }
+    private void openSettingsActivity()
+    {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+
+    }
+
 }

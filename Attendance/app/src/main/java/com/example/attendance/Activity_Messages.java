@@ -7,13 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ClassViewActivity extends AppCompatActivity {
-    //private ActivityLoginBinding binding;
+public class Activity_Messages extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_view);
+        setContentView(R.layout.activity_messages);
         //binding = ActivityLoginBinding.inflate(getLayoutInflater());
         //setContentView(R.layout.my_layout_id);
 
@@ -41,7 +40,7 @@ public class ClassViewActivity extends AppCompatActivity {
                 openSettingsActivity();
             }
         });
-
+//MessagesButton
     }
     private void openClassesActivity()
     {
