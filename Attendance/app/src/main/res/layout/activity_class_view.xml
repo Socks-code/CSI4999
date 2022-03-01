@@ -6,11 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ClassViewActivity">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#E7FFF4"
-        tools:context=".TestActivity">
+        tools:context=".TestActivity"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <Button
             android:id="@+id/HomeButton"
@@ -78,42 +81,70 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <EditText
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class Name"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <EditText
+            android:id="@+id/textView2"
+            android:layout_width="412dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="186dp"
+            android:hint="Class ID"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteX="-3dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Add Class To Schedule"
+            android:textSize="44dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="207dp"
+            android:layout_height="55dp"
+
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="396dp"
+            android:text="Cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Add_Button"
+            android:layout_width="209dp"
+            android:layout_height="46dp"
+
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="352dp"
+            android:text="Add Class"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="55dp"
+            android:layout_height="73dp"
+            android:text="+"
+            app:icon="@drawable/ic_baseline_add_24"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="744dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="112dp"
-        android:text="Add New Class"
-        android:textSize="44dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal"
-        />
-
-
-    <EditText
-        android:id="@+id/textView2"
-        android:layout_width="408dp"
-        android:layout_height="207dp"
-        android:hint="Class ID"
-        android:orientation="vertical"
-        tools:ignore="DuplicateIds"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="177dp" />
-
-    <EditText
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:hint="Class Name"
-        tools:ignore="DuplicateIds" />
-
-
 
     <ImageView
         android:id="@+id/imageView4"
