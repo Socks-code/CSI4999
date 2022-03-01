@@ -78,18 +78,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="347dp"
-            android:layout_height="234dp"
-            android:layout_marginStart="51dp"
-            android:layout_marginTop="112dp"
-            android:text="ClassesView"
-            android:textSize="44dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="112dp"
+        android:text="Add New Class"
+        android:textSize="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        />
+
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="408dp"
+        android:layout_height="207dp"
+        android:hint="Class ID"
+        android:orientation="vertical"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:hint="Class Name"
+        tools:ignore="DuplicateIds" />
+
+
 
     <ImageView
         android:id="@+id/imageView4"
