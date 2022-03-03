@@ -8,11 +8,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="Attendance+DB.db";
-    public static final String TABLE_NAME="users";
-    public static final String COL_1="user_id";
-    public static final String COL_2="password";
-    public static final String COL_3="email";
-    public static final String COL_4="Status";
+    public static final String TABLE_NAME="users";//registeruser
+    public static final String COL_1="user_id";//id
+    public static final String COL_2="password";//username
+    public static final String COL_3="email";//password
+    public static final String COL_4="status";//New
     public DatabseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -33,7 +33,7 @@ public class DatabseHelper extends SQLiteOpenHelper {
         ContentValues contentValues=new ContentValues();
         contentValues.put("username",user);
         contentValues.put("password",password);
-        long res=db.insert("registeruser",null,contentValues);
+        long res=db.insert("users",null,contentValues);
         db.close();
         return res;
     }
@@ -41,7 +41,7 @@ public class DatabseHelper extends SQLiteOpenHelper {
     {
          SQLiteDatabase db=this.getReadableDatabase();
          String[] coloums={COL_1};
-         String selection=COL_2+"=?"+" and "+COL_3+"=?";
+         String selection=COL_3+"=?"+" and "+COL_2+"=?";
          String[] selectionargs={User,Password};
         Cursor cursor=db.query(TABLE_NAME,coloums,selection,selectionargs,null,null,null);
         int count=cursor.getCount();
