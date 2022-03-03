@@ -12,8 +12,32 @@
         android:layout_height="match_parent"
         android:background="#E7FFF4"
         tools:context=".TestActivity"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="-16dp">
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/className"
+            android:layout_width="407dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="336dp"
+            android:gravity="start"
+            android:hint="Class Name"
+            android:inputType="text"
+            android:textSize="44dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <TextView
+            android:id="@+id/classID"
+            android:layout_width="406dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="244dp"
+            android:gravity="start"
+            android:hint="Class ID"
+            android:inputType="text"
+            android:textSize="44dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
 
         <Button
             android:id="@+id/HomeButton"
@@ -81,63 +105,44 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/classname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Class Name"
-            android:orientation="vertical"
-            tools:ignore="DuplicateIds"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="358dp" />
-
-        <EditText
-            android:id="@+id/classid"
-            android:layout_width="412dp"
-            android:layout_height="132dp"
-            android:layout_marginTop="276dp"
-            android:hint="Class ID"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="DuplicateIds"
-            tools:layout_editor_absoluteX="-2dp" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="219dp"
+            android:layout_marginTop="104dp"
             android:gravity="center_horizontal"
             android:text="Add Class To Schedule"
             android:textSize="44dp"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="1dp" />
+            tools:layout_editor_absoluteX="-1dp" />
 
         <Button
             android:id="@+id/cancel_button"
             android:layout_width="207dp"
             android:layout_height="55dp"
 
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="96dp"
             android:layout_marginTop="484dp"
             android:layout_marginBottom="307dp"
             android:text="Cancel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" />
 
         <Button
             android:id="@+id/Add_Button"
             android:layout_width="209dp"
             android:layout_height="46dp"
 
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="96dp"
             android:layout_marginTop="440dp"
             android:layout_marginBottom="360dp"
             android:text="Add Class"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095" />
 
         <Button
             android:id="@+id/button"

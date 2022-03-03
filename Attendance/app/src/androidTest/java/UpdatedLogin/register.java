@@ -25,6 +25,8 @@ public class register extends AppCompatActivity {
    private EditText registerconfirmpassword;
    private Button registerbtn;
    private TextView registertext;
+
+
    DatabseHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
