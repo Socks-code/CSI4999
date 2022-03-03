@@ -5,12 +5,14 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/backgrnd.xml" value="0.229" />
         <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.338" />
-        <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.42580316165221826" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.2380464480874317" />
-        <entry key="app/src/main/res/layout/activity_class_view.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_class_view.xml" value="0.3011978149414063" />
+        <entry key="app/src/main/res/layout/activity_last.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/layout/activity_messages.xml" value="0.22239583333333332" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.22239583333333332" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.14990942028985507" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.25" />
       </map>
     </option>
