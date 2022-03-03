@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.attendance.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         db=new DatabseHelper(this);
         loginuser=findViewById(R.id.loginmail);
-        loginpass=findViewById(R.id.loginpassword);
-        loginbtn=findViewById(R.id.loginbutton);
-        logintext=findViewById(R.id.logintext);
+        //loginpass=findViewById(R.id.loginpassword);
+        //loginbtn=findViewById(R.id.loginbutton);
+        //logintext=findViewById(R.id.logintext);
         String text="Not Registered Yet?Register Here";
         SpannableString ss=new SpannableString(text);
         ClickableSpan clickableSpan=new ClickableSpan() {

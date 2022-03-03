@@ -7,12 +7,20 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabseHelper extends SQLiteOpenHelper {
+<<<<<<< HEAD
     public static final String DATABASE_NAME="Attendance+DB.db";
     public static final String TABLE_NAME="users";//registeruser
     public static final String COL_1="user_id";//id
     public static final String COL_2="password";//username
     public static final String COL_3="email";//password
     public static final String COL_4="status";//New
+=======
+    public static final String DATABASE_NAME="register.db";
+    public static final String TABLE_NAME="registeruser";
+    public static final String COL_1="id";
+    public static final String COL_2="username";
+    public static final String COL_3="password";
+>>>>>>> parent of d572a2a (Fixed R reference issue)
     public DatabseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }

@@ -1,8 +1,7 @@
 package UpdatedLogin;
 
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
-import com.example.attendance.R;
+import android.support.v7.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
